@@ -14,7 +14,7 @@ public class Noticia
 		System.out.println("2.Politica");
 		System.out.println("3.Economia");
 		System.out.println("*****************:");
-		TipoNoticia=leer.nextInt();
+		Categoria=leer.nextInt();
 		switch(Categoria){
 				case 1:
 				//Entrada de datos
@@ -53,9 +53,7 @@ public class Noticia
 				String nombre;
 				String opinion1;
 				String opinion2;
-				String Titulo;
-				String FecahPublicada;
-				System.out.printl("Ingrese el titulo");
+				System.out.println("Ingrese el titulo");
 				Titulo=leer.nextLine();
 				System.out.println("ingrese la fecha de publicacion");
 				FechaPublicada=leer.nextLine();
@@ -66,7 +64,7 @@ public class Noticia
 				System.out.println("Ingrese su opinion acerca del trabajo de su presidente");
 				opinion1=leer.nextLine();
 				System.out.println("Ingrese su opinion acerca del trabajo de los 3 organos del gobierno");
-				opinion=leer.nextline();
+				opinion2=leer.nextLine();
 				//Salida
 				System.out.println("<<==============================================================>>");
 				System.out.println("El titulo es: "+Titulo);
@@ -76,7 +74,25 @@ public class Noticia
 				System.out.println("Su opinion acerca del trabajo de su presidente es: "+opinion1);
 				System.out.println("Su opinion acerca del trabajo de los 3 organos del estado es: "+opinion2);
 
-
+				case 3:
+				//Entrada de datos
+				String Resumen,Detalles,Impacto;
+				System.out.println("Ingrese el titulo");
+				Titulo=leer.nextLine();
+				System.out.println("Ingrese la fecha de publicacion");
+				FechaPublicada=leer.nextLine();
+				System.out.println("Ingrese un resumen del tema tratado");
+				Resumen=leer.nextLine();
+				System.out.println("Detalles del tema");
+				Detalles=leer.nextLine();
+				System.out.println("Que impacto tiene en nuestro pais");
+				Impacto=leer.nextLine();
+				//Salida
+				System.out.println("El Titulo es: "+Titulo);
+				System.out.println("La fecha es: "+FechaPublicada);
+				System.out.println("Resumen del tema"+Resumen);
+				System.out.println("los detalles son"+Detalles);
+				System.out.println("El impacto en el pais:+Impacto");
 
 			}
 			
