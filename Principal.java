@@ -1,8 +1,9 @@
 import src.*;
-public class principal {
+class principal {
     public static void main(String[] args) {
-     // chris
-     
+     // creando la clase Artista
+     Artista ar = new Artista();
+     ar.Examen_Artista();
      
     //mario
 
