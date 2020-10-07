@@ -7,7 +7,6 @@ public class Artista {
     Scanner lc = new Scanner(System.in);
     public void Examen_Artista() {
         int res1=0,res2=0,rf=0;
-        
         System.out.println("-------QUEREMOS DETERMINAR SU POTENCIAL PARA ARTISTA------");
         System.out.println("POR FAVOR RESPONDA CORRECTAMENTE LAS SIGUIENTES PREGUNTAS");
         System.out.println("Para que se debe ser artista?");
@@ -39,10 +38,8 @@ public class Artista {
             Habilidades(habilidades);
             Experiencia(exp);
             Estudios(estudios);
-
         }else {
             System.out.println("Piensa mas claro, quisa algo falte");
-            
         }
 
     }
