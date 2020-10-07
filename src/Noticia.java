@@ -8,7 +8,8 @@ public class Noticia
 	public void Insertar()
 	{
 		int Categoria;
-		System.out.println("Deque trata la noticia que desea publicar");
+		System.out.println("*****************:");
+		System.out.println("De que trata la noticia que desea publicar");
 		System.out.println("Tipos de noticias");
 		System.out.println("1.Deportiva");
 		System.out.println("2.Politica");
@@ -47,6 +48,7 @@ public class Noticia
 				System.out.println("Goles del"+Equipo1+ "son"+GolesEquipo1+ "En total" );
 				System.out.println("Goles del"+Equipo2+ "son"+GolesEquipo2+ "En total" );
 				System.out.println("El jugador que mas destaco es "+JugadorDestacado);
+				break;
 				case 2:
 				//entrada de datos 
 				String opinion;
@@ -73,7 +75,7 @@ public class Noticia
 				System.out.println("El nombre del presidente de su pais es: "+nombre);
 				System.out.println("Su opinion acerca del trabajo de su presidente es: "+opinion1);
 				System.out.println("Su opinion acerca del trabajo de los 3 organos del estado es: "+opinion2);
-
+				break;
 				case 3:
 				//Entrada de datos
 				String Resumen,Detalles,Impacto;
@@ -93,7 +95,13 @@ public class Noticia
 				System.out.println("Resumen del tema"+Resumen);
 				System.out.println("los detalles son"+Detalles);
 				System.out.println("El impacto en el pais:+Impacto");
-
+				break;
+			
+			default:
+			{
+			System.out.println("error eliga una opcion disponible");
+			}
+			
 			}
 			
 	}
