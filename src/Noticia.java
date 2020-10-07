@@ -57,6 +57,7 @@ public class Noticia
 				String opinion2;
 				System.out.println("Ingrese el titulo");
 				Titulo=leer.nextLine();
+				Titulo=leer.nextLine();
 				System.out.println("ingrese la fecha de publicacion");
 				FechaPublicada=leer.nextLine();
 				System.out.println("Ingrese su opinion de como es la politica en su pais");
