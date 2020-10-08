@@ -13,7 +13,7 @@ public class Noticia
 				
 	String Resumen,Detalles,Impacto;
 	
-	String Categoria1,Categoria2;
+	String Categoria1;
 	
 	Scanner leer = new Scanner(System.in);
 	
@@ -61,7 +61,7 @@ public class Noticia
 				Titulo=leer.nextLine();
 				System.out.println("Ingrese la fecha de publicacion ");
 				FechaPublicada=leer.nextLine();
-				Categoria2="Economia";
+				Categoria1="Economia";
 				System.out.println("Ingrese un resumen del tema tratado ");
 				Resumen=leer.nextLine();
 				System.out.println("Detalles del tema ");
@@ -122,7 +122,7 @@ public class Noticia
 				System.out.println("Usted eligio modificar la Categoria");
 				System.out.println("Escriba su siguiente modificacion en la categoria");
 				leer.nextLine();
-				Categoria=leer.nextLine();
+				Categoria1=leer.nextLine();
 				break;
 				default:
 				{
@@ -159,7 +159,7 @@ public class Noticia
 				System.out.println("Usted eligio modificar la Categoria");
 				System.out.println("Escriba su siguiente modificacion en la categoria");
 				leer.nextLine();
-				Categoria=leer.nextLine();
+				Categoria1=leer.nextLine();
 				break;
 				
 				default:
