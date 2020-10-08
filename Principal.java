@@ -14,6 +14,7 @@ import java.util.Scanner;
 		N = new Noticia();
 		N.Insertar();
 		N.Consultar();
+		N.Modificar();
     //Kevin
     }
 }
