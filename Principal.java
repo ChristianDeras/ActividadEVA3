@@ -1,6 +1,6 @@
 import src.*;
 import java.util.Scanner;
- public class principal {
+ class principal {
     public static void main(String[] args) {
      // chris
      
