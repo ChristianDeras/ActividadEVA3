@@ -82,6 +82,93 @@ public class Noticia
 	
 	public void Modificar()
 	{
+		int respuesta;
+		String respuestaDeporte;
+		String respuestaEconomia;
+		String respuestaTitulo;
+		String respuestaFechapublicada;
+		String respuestaCategoria;
+		
+		System.out.println("====================================");
+		System.out.println(" ");
+		System.out.println("== ¿Desea editar alguna noticia? ==");
+		System.out.println("** ¿Que noticia desea editar? ** ");
+		System.out.println("1 = Deportiva ");
+		System.out.println("2 = Economia ");
+		System.out.println(" ");
+		System.out.println("====================================== ");
+		respuesta=leer.nextInt();
+		
+		if(respuesta == 1){
+			System.out.println("<<<<< **************** >>>>");
+			System.out.println("¿Que parte desea editar?");
+			System.out.println("1 = Titulo"); 
+			System.out.println("2 = Fecha publicada");
+			System.out.println("3 = Categoria ");
+			respuestaDeporte=leer.nextLine();
+			switch(respuestaDeporte){
+				case 1:
+				System.out.println("Usted eligio modificar el TITULO");
+				System.out.println("Escriba su siguiente modificacion en el TITULO");
+				respuestaTitulo=leer.nextLine();
+				break;
+
+				case 2:
+				System.out.println("Usted eligio modificar la Fecha de publicacion");
+				System.out.println("Escriba su siguiente modificacion en la Fecha publicada");
+				respuestaFechapublicada=leer.nextLine();
+				break;
+
+				case 3:
+				System.out.println("Usted eligio modificar la Categoria");
+				System.out.println("Escriba su siguiente modificacion en la categoria");
+				respuestaCategoria=leer.nextLine();
+				break;
+				default:
+				{
+					System.out.println("Usted eligio un numero incorrecto");
+				}
+			}
+		}else{
+			System.out.println("Usted eligio un numero incorrecto");
+		}
+		
+		if(respuesta == 2){
+			System.out.println("<<<<< **************** >>>>");
+			System.out.println("¿Que parte desea editar?");
+			System.out.println("1 = Titulo"); 
+			System.out.println("2 = Fecha publicada");
+			System.out.println("3 = Categoria ");
+			respuestaEconomia=leer.nextLine();
+			switch(respuestaEconomia){
+				case 1:
+				System.out.println("Usted eligio modificar el TITULO");
+				System.out.println("Escriba su siguiente modificacion en el TITULO");
+				respuestaTitulo=leer.nextLine();
+				break;
+
+				case 2:
+				System.out.println("Usted eligio modificar la Fecha de publicacion");
+				System.out.println("Escriba su siguiente modificacion en la Fecha publicada");
+				respuestaFechapublicada=leer.nextLine();
+				break;
+
+				case 3:
+				System.out.println("Usted eligio modificar la Categoria");
+				System.out.println("Escriba su siguiente modificacion en la categoria");
+				respuestaCategoria=leer.nextLine();
+				break;
+				
+				default:
+				{
+					System.out.println("Usted eligio un numero incorrecto");
+				}
+
+			}
+
+		} else{
+			System.out.println("Usted eligio un numero incorrecto");
+		}
 		
 	}
 	
