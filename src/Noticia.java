@@ -83,8 +83,8 @@ public class Noticia
 	public void Modificar()
 	{
 		int respuesta;
-		String respuestaDeporte;
-		String respuestaEconomia;
+		int respuestaDeporte;
+		int respuestaEconomia;
 		String respuestaTitulo;
 		String respuestaFechapublicada;
 		String respuestaCategoria;
@@ -105,7 +105,7 @@ public class Noticia
 			System.out.println("1 = Titulo"); 
 			System.out.println("2 = Fecha publicada");
 			System.out.println("3 = Categoria ");
-			respuestaDeporte=leer.nextLine();
+			respuestaDeporte=leer.nextInt();
 			switch(respuestaDeporte){
 				case 1:
 				System.out.println("Usted eligio modificar el TITULO");
@@ -139,7 +139,7 @@ public class Noticia
 			System.out.println("1 = Titulo"); 
 			System.out.println("2 = Fecha publicada");
 			System.out.println("3 = Categoria ");
-			respuestaEconomia=leer.nextLine();
+			respuestaEconomia=leer.nextInt();
 			switch(respuestaEconomia){
 				case 1:
 				System.out.println("Usted eligio modificar el TITULO");
