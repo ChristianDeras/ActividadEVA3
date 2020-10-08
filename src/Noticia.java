@@ -90,10 +90,18 @@ public class Noticia
 			System.out.println("error eliga una opcion disponible");
 			}
 			
-			}
-			
+			}		
 	}
 
+	
+	public void Modificar()
+	{
+		
+	}
+	
+		
+		
+		
 	public void Consultar()
 	{			
 				System.out.println("*****************:");
