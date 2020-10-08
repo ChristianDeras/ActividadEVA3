@@ -209,7 +209,7 @@ public class Noticia
 				System.out.println("**********************");
 				System.out.println("El Titulo es: "+Titulo);
 				System.out.println("La fecha es: "+FechaPublicada);
-				System.out.println("La categoria es: "+Categoria2);
+				System.out.println("La categoria es: "+Categoria1);
 				System.out.println("Resumen del tema: "+Resumen);
 				System.out.println("los detalles son: "+Detalles);
 				System.out.println("El impacto en el pais: "+Impacto);
