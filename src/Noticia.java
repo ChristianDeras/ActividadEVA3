@@ -81,7 +81,11 @@ public class Noticia
 
 	
 	public void Modificar()
-	{	
+	{
+		int respuesta;
+		int respuestaDeporte;
+		int respuestaEconomia;
+		
 		System.out.println("====================================");
 		System.out.println(" ");
 		System.out.println("== ¿Desea editar alguna noticia? ==");
