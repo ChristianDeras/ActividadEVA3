@@ -110,19 +110,22 @@ public class Noticia
 				case 1:
 				System.out.println("Usted eligio modificar el TITULO");
 				System.out.println("Escriba su siguiente modificacion en el TITULO");
-				respuestaTitulo=leer.nextLine();
+				leer.nextLine();
+				Titulo=leer.nextLine();
 				break;
 
 				case 2:
 				System.out.println("Usted eligio modificar la Fecha de publicacion");
 				System.out.println("Escriba su siguiente modificacion en la Fecha publicada");
-				respuestaFechapublicada=leer.nextLine();
+				leer.nextLine();
+				FechaPublicada=leer.nextLine();
 				break;
 
 				case 3:
 				System.out.println("Usted eligio modificar la Categoria");
 				System.out.println("Escriba su siguiente modificacion en la categoria");
-				respuestaCategoria=leer.nextLine();
+				leer.nextLine();
+				Categoria=leer.nextLine();
 				break;
 				default:
 				{
@@ -159,7 +162,7 @@ public class Noticia
 				System.out.println("Usted eligio modificar la Categoria");
 				System.out.println("Escriba su siguiente modificacion en la categoria");
 				leer.nextLine();
-				respuestaCategoria=leer.nextLine();
+				Categoria=leer.nextLine();
 				break;
 				
 				default:
