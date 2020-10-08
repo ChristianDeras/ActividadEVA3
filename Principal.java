@@ -13,6 +13,7 @@ import java.util.Scanner;
 		Noticia N;
 		N = new Noticia();
 		N.Insertar();
+		N.Consultar();
     //Kevin
     }
 }
