@@ -13,20 +13,21 @@ public class Noticia
 				
 	String Resumen,Detalles,Impacto;
 	
+	String Categoria1,Categoria2;
+	
 	Scanner leer = new Scanner(System.in);
 	
 	public void Insertar()
 	{
-		int Categoria;
+		int Respuesta;
 		System.out.println("*****************:");
 		System.out.println("De que trata la noticia que desea publicar");
 		System.out.println("Tipos de noticias");
 		System.out.println("1.Deportiva");
-		System.out.println("2.Politica");
-		System.out.println("3.Economia");
+		System.out.println("2.Economia");
 		System.out.println("*****************:");
-		Categoria=leer.nextInt();
-		switch(Categoria){
+		Respuesta=leer.nextInt();
+		switch(Respuesta){
 				case 1:
 				//Entrada de datos
 				System.out.println("********Noticia de Deporte************");
@@ -35,6 +36,7 @@ public class Noticia
 				Titulo=leer.nextLine();
 				System.out.println("Ingrese la fecha de publicacion");
 				FechaPublicada=leer.nextLine();
+				Categoria1="Deportes";
 				System.out.println("Ingrese los equipos que se enfrentaron");
 				System.out.println("Equipo 1");
 				Equipo1=leer.nextLine();
@@ -50,25 +52,8 @@ public class Noticia
 				EquiGanador=leer.nextLine();
 				EquiGanador=leer.nextLine();
 				break;
-				case 2:
-				//entrada de datos 
-				System.out.println("********Noticia de Politica***********");
-				System.out.println("Ingrese el titulo");
-				Titulo=leer.nextLine();
-				System.out.println("ingrese la fecha de publicacion");
-				FechaPublicada=leer.nextLine();
-				System.out.println("Ingrese su opinion de como es la politica en su pais");
-				opinion=leer.nextLine();
-				System.out.println("Ingrese el nombre de su presidente");
-				nombre=leer.nextLine();
-				System.out.println("Ingrese su opinion acerca del trabajo de su presidente");
-				opinion1=leer.nextLine();
-				System.out.println("Ingrese su opinion acerca del trabajo de los 3 organos del gobierno");
-				opinion2=leer.nextLine();
 				
-
-				break;
-				case 3:
+				case 2:
 				//Entrada de datos
 				System.out.println("********Noticia de Economia************");
 				System.out.println("Ingrese el titulo ");
@@ -76,6 +61,7 @@ public class Noticia
 				Titulo=leer.nextLine();
 				System.out.println("Ingrese la fecha de publicacion ");
 				FechaPublicada=leer.nextLine();
+				Categoria2="Economia";
 				System.out.println("Ingrese un resumen del tema tratado ");
 				Resumen=leer.nextLine();
 				System.out.println("Detalles del tema ");
@@ -107,8 +93,7 @@ public class Noticia
 				System.out.println("*****************:");
 				System.out.println("Que noticia desea consultar");
 				System.out.println("1.Deportiva");
-				System.out.println("2.Politica");
-				System.out.println("3.Economia");
+				System.out.println("2.Economia");
 				System.out.println("*****************:");
 				int Consulta;
 				Consulta=leer.nextInt();
@@ -119,6 +104,7 @@ public class Noticia
 				System.out.println("********Consulta Noticia de Deporte************");
 				System.out.println("Titulo: "+Titulo);
 				System.out.println("Fecha: "+FechaPublicada);
+				System.out.println("La categoria es: "+Categoria1);
 				System.out.println("Enfrentamiento entre:  "+ Equipo1 + " Vs " + Equipo2);
 				System.out.println("El Equipo ganador es: "+EquiGanador);
 				System.out.println("Goles del "+Equipo1+ " son: "+GolesEquipo1+ " En total " );
@@ -127,21 +113,13 @@ public class Noticia
 				System.out.println("**********************");
 				break;
 				
-				case 2:
-				System.out.println("********Consulta Noticia de Politica************");
-				System.out.println("El titulo es: "+Titulo);
-				System.out.println("La fecha en que fue publicado es: "+FechaPublicada);
-				System.out.println("Su opinion acerca de la politica es: "+opinion);
-				System.out.println("El nombre del presidente de su pais es: "+nombre);
-				System.out.println("Su opinion acerca del trabajo de su presidente es: "+opinion1);
-				System.out.println("Su opinion acerca del trabajo de los 3 organos del estado es: "+opinion2);
-				break;
 				
-				case 3:
+				case 2:
 				System.out.println("********Consulta Noticia de Politica************");
 				System.out.println("**********************");
 				System.out.println("El Titulo es: "+Titulo);
 				System.out.println("La fecha es: "+FechaPublicada);
+				System.out.println("La categoria es: "+Categoria2);
 				System.out.println("Resumen del tema: "+Resumen);
 				System.out.println("los detalles son: "+Detalles);
 				System.out.println("El impacto en el pais: "+Impacto);
