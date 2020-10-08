@@ -15,11 +15,7 @@ public class Obras {
 		public String getTitulo(){
 		 return titulo; 
 		}
-	 
-	 
-	 
 
-	
 		//Metodo Setter: Establecemos el nombre del autor
 		public void setAutor(String autor){
 		 this.autor = autor;
@@ -30,10 +26,6 @@ public class Obras {
 		 return autor;
 		 
 		}
-	 
-	 
-	 
-	 
 	 
 		//Metodo setter: Establecemos el anio de edicion
 		public void setAnioedicion(int anioedicion){

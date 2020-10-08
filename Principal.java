@@ -23,10 +23,10 @@ class principal {
 	//Imprimimos
 		System.out.println("");
 	System.out.println("------------------------------");
-		System.out.println("El nombre del titulo es :"+obs.getTitulo());
-			System.out.println("El nombre del autor es :"+obs.getAutor());
-				System.out.println("El a�o de la obra es :"+obs.getAnioedicion());
-					System.out.println("");
+	System.out.println("El nombre del titulo es :"+obs.getTitulo());
+	System.out.println("El nombre del autor es :"+obs.getAutor());
+	System.out.println("El a�o de la obra es :"+obs.getAnioedicion());
+	System.out.println("");
 				
 
     //rene
