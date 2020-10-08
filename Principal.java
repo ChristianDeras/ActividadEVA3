@@ -1,13 +1,13 @@
 import src.*;
 import java.util.*;
 class principal {
-	Scanner leer = new Scanner(System.in);
     public static void main(String[] args) {
-     // creando la clase Artista
+	 // creando la clase Artista
      Artista ar = new Artista();
      ar.Examen_Artista();
      
-    //mario
+	//mario
+	Scanner leer = new Scanner(System.in);
 	System.out.println("");
 	System.out.println("-----INGRESE LOS DATOS DE LA OBRA-----");
 	//Instanciamos la clase Obras
