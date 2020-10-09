@@ -65,7 +65,7 @@ class principal {
     			System.out.println(fecha+"  ");
 
     		}
-    		while (desicion == 1)
+    		while (desicion == 1);
     		
     	}
     	else{
